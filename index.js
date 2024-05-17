@@ -114,7 +114,7 @@ function playGame(playerMove) {
   updateElementScore();
   document.querySelector('.js-result').innerHTML = `<p class = "css-result">${result}</p>`;
   document.querySelector('.js-choice').innerHTML = `<div class = "button-container"><p class = "who-css">You</p><img src = 
-"images/${playerMove}-emoji.png" class = "icon-result"> <p class = "who-css">Computer</p> <img src = "images/${computerMove}-emoji.png" class = "icon-result"></div>`;
+"${playerMove}-emoji.png" class = "icon-result"> <p class = "who-css">Computer</p> <img src = "${computerMove}-emoji.png" class = "icon-result"></div>`;
 }
 
 function updateElementScore() {
