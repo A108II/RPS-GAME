@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <h1 class = "head-css">Rock-Paper-Scissors Game</h1>
+  <div class="button-container">
+    <button class="choice-button js-rock-button"><img src="rock-emoji.png" class="icon"></button>
+
+    <button class="choice-button js-paper-button"><img src="paper-emoji.png" class="icon"></button>
+
+    <button class="choice-button js-scissor-button"><img src="scissors-emoji.png" class="icon"></button>
+  </div>
+
+  <p class="js-result"></p>
+  <p class="js-choice"></p>
+  <p class="js-scores"></p>
+
+  <div class = "flex-container">
+  <button onclick="  
+  scores.wins = 0;
+  scores.losses = 0;
+  scores.ties = 0;
+  localStorage.removeItem('scores');
+  updateElementScore();" class="reset-button">Reset Score
+  </button>
+
+  <button class="js-auto-button auto-button" onclick="generator();">Auto Play
+  </button>
+  </div>
+
+  <script src="test.js"></script>
+</body>
+
+</html>
